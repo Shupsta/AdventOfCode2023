@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Day2": {
+      "commandName": "Project",
+      "commandLineArgs": "C:\\Users\\nshupe\\source\\repos\\AdventOfCode2023\\Day2\\input.txt"
+    }
+  }
+}
