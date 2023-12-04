@@ -60,12 +60,14 @@ while (line != null)
                 string numWord = numberWords[i];
                 if (word.Contains(numWord))
                 {
-                    if (firstChar == null) firstChar = (char)('0' + i);
-                    lastChar = (char)('0' + i);
+                    char indexNum = (char)('0' + i);
 
-                    //wordArray = new char[line.Length];
-                    //wordArrayIndex = 0;
-                    word = string.Empty;
+                    if (firstChar == null) firstChar = indexNum;
+                    lastChar = indexNum;
+
+                    int firstOcc = word.IndexOf(numWord);
+
+                    wordArray[firstOcc] = Char.MinValue;
                 }
             }
         }
